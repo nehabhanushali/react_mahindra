@@ -29,6 +29,7 @@ const AdminTable = () => {
     <div>
       <AdminFilters filterData={setFilterData} />
       <div className="admin-table-main">
+        <p>Total Records: {filterData.length}</p>
         <ul className="admin-head">
           <li>ID</li>
           <li onClick={getSortData}>

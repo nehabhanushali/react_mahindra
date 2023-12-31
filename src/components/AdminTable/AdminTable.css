@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
 }
+.admin-table-main p {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
 .admin-table-main ul {
   display: flex;
 }
@@ -24,7 +29,7 @@
   margin: 0 0 0.6rem;
 }
 .admin-table-main {
-  padding: 1.5rem;
+  padding: 0 1.5rem;
 }
 .admin-table-main .admin-head {
   background: #d1d1d1;
