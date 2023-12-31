@@ -102,6 +102,7 @@ const AdminFilters = ({ filterData }) => {
           dateFormat="dd/MM/yyyy"
           selected={startDate}
           onChange={(date) => getStartDate(date)}
+          maxDate={endDate || new Date()}
         />
       </div>
       <div>
@@ -111,6 +112,7 @@ const AdminFilters = ({ filterData }) => {
           selected={endDate}
           onChange={(date) => getEndDate(date)}
           minDate={startDate}
+          maxDate={new Date()}
         />
       </div>
       <div>
@@ -148,7 +150,7 @@ const AdminFilters = ({ filterData }) => {
         <input
           type="text"
           name="idsearch"
-          placeholder="Id Search"
+          placeholder="ID Search"
           onChange={searchHandler}
           value={search}
         />

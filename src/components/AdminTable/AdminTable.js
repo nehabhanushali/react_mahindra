@@ -30,63 +30,68 @@ const AdminTable = () => {
       <AdminFilters filterData={setFilterData} />
       <div className="admin-table-main">
         <p>Total Records: {filterData.length}</p>
-        <ul className="admin-head">
-          <li>ID</li>
-          <li onClick={getSortData}>
-            Date
-            <span>
-              <TiArrowUnsorted />
-            </span>
-          </li>
-          <li>Branch</li>
-          <li>Type</li>
-          <li>Amount</li>
-          <li>Bank</li>
-          <li>
-            Requested By <br />
-            (Employee Code)
-          </li>
-          <li>Status</li>
-          <li></li>
-        </ul>
-        {data &&
-          data.map(
-            (
-              {
-                id,
-                date,
-                branch,
-                type,
-                amount,
-                bank,
-                requestBy,
-                employeeCode,
-                status,
-              },
-              index
-            ) => (
-              <ul key={index + 1}>
-                <li>{id}</li>
-                <li>{date}</li>
-                <li>{branch}</li>
-                <li>{type}</li>
-                <li>{amount}</li>
-                <li>{bank}</li>
-                <li>
-                  {requestBy} <p>({employeeCode})</p>
-                </li>
-                <li>{status}</li>
-                <li>
-                  <span
-                    className="delete-icon"
-                    onClick={() => deleteHandler(id)}
-                  >
-                    <MdAutoDelete />
-                  </span>
-                </li>
-              </ul>
-            )
-          )}
+        <table>
+          <thead>
+            <td>ID</td>
+            <td onClick={getSortData}>
+              Date
+              <span>
+                <TiArrowUnsorted />
+              </span>
+            </td>
+            <td>Branch</td>
+            <td>Type</td>
+            <td>Amount</td>
+            <td>Bank</td>
+            <td>
+              Requested By <br />
+              (Employee Code)
+            </td>
+            <td>Status</td>
+            <td></td>
+          </thead>
+          <tbody>
+            {data &&
+              data.map(
+                (
+                  {
+                    id,
+                    date,
+                    branch,
+                    type,
+                    amount,
+                    bank,
+                    requestBy,
+                    employeeCode,
+                    status,
+                  },
+                  index
+                ) => (
+                  <tr key={index + 1}>
+                    <td>{id}</td>
+                    <td>{date}</td>
+                    <td>{branch}</td>
+                    <td>{type}</td>
+                    <td>{amount}</td>
+                    <td>{bank}</td>
+                    <td>
+                      {requestBy} <p>({employeeCode})</p>
+                    </td>
+                    <td>{status}</td>
+                    <td className="text-center">
+                      <span
+                        className="delete-icon"
+                        onClick={() => deleteHandler(id)}
+                      >
+                        <MdAutoDelete />
+                      </span>
+                    </td>
+                  </tr>
+                )
+              )}
+          </tbody>
+        </table>
+
         {noData && <div className="data-unavailable">No Data Found</div>}
       </div>
     </div>

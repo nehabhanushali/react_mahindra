@@ -20,6 +20,7 @@
   border: 1px solid #d1d1d1;
   font-size: 1rem;
   width: 100%;
+  background: #fff;
 }
 .filters-main-sc > div {
   flex: 1 1;

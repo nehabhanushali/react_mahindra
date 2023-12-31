@@ -8,40 +8,28 @@
   font-size: 0.9rem;
   margin-bottom: 0.8rem;
 }
-.admin-table-main ul {
-  display: flex;
-}
-.admin-table-main ul li:first-child,
-.admin-table-main ul li:last-child {
-  flex: 0.5;
-}
-.admin-table-main ul li {
-  flex: 1;
-  list-style: none;
-  padding: 0.3rem;
+.admin-table-main td {
+  padding: 0.3rem 0.5rem;
   font-size: 0.9rem;
   border-bottom: 1px solid #e4e4e4;
 }
-.admin-table-main ul {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 0;
-  margin: 0 0 0.6rem;
+.text-center {
+  text-align: center;
 }
 .admin-table-main {
   padding: 0 1.5rem;
 }
-.admin-table-main .admin-head {
-  background: #d1d1d1;
-  margin-bottom: 0;
-}
-.admin-table-main .admin-head li {
-  padding: 0.6rem 0.3rem;
+.admin-table-main thead td {
+  padding: 0.5rem;
   font-weight: bold;
+  background: #d1d1d1;
 }
-.admin-table-main ul li p {
+.admin-table-main p {
   margin: 0;
   font-size: 0.8rem;
+}
+.admin-table-main table {
+  width: 100%;
 }
 .delete-icon {
   font-size: 1.25rem;
@@ -52,7 +40,7 @@
   color: #ff0000;
   padding: 1rem;
 }
-.admin-head li span {
+.admin-table-main td span {
   display: inline-block;
   vertical-align: middle;
   cursor: pointer;
