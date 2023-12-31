@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.admin-table-main ul {
+  display: flex;
+}
+.admin-table-main ul li:first-child,
+.admin-table-main ul li:last-child {
+  flex: 0.5;
+}
+.admin-table-main ul li {
+  flex: 1;
+  list-style: none;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+.admin-table-main ul {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 0 0 0.6rem;
+}
+.admin-table-main {
+  padding: 1.5rem;
+}
+.admin-table-main .admin-head {
+  background: #d1d1d1;
+  margin-bottom: 0;
+}
+.admin-table-main .admin-head li {
+  padding: 0.6rem 0.3rem;
+  font-weight: bold;
+}
+.admin-table-main ul li p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+.delete-icon {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.data-unavailable {
+  text-align: center;
+  color: #ff0000;
+  padding: 1rem;
+}
+.admin-head li span {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
