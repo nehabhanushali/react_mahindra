@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react_mahindra/static/css/main.67d88710.css",
-    "main.js": "/react_mahindra/static/js/main.91e2dcd2.js",
+    "main.css": "/react_mahindra/static/css/main.ad42145a.css",
+    "main.js": "/react_mahindra/static/js/main.4816c1e1.js",
     "static/js/787.401db27a.chunk.js": "/react_mahindra/static/js/787.401db27a.chunk.js",
     "index.html": "/react_mahindra/index.html",
-    "main.67d88710.css.map": "/react_mahindra/static/css/main.67d88710.css.map",
-    "main.91e2dcd2.js.map": "/react_mahindra/static/js/main.91e2dcd2.js.map",
+    "main.ad42145a.css.map": "/react_mahindra/static/css/main.ad42145a.css.map",
+    "main.4816c1e1.js.map": "/react_mahindra/static/js/main.4816c1e1.js.map",
     "787.401db27a.chunk.js.map": "/react_mahindra/static/js/787.401db27a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67d88710.css",
-    "static/js/main.91e2dcd2.js"
+    "static/css/main.ad42145a.css",
+    "static/js/main.4816c1e1.js"
   ]
 }
